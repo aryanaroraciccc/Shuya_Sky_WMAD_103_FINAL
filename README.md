@@ -9,4 +9,3 @@
 - ![#A8DADC](https://placehold.co/15x15/A8DADC/A8DADC.png) `#A8DADC`
 - ![#457B9D](https://placehold.co/15x15/457B9D/457B9D.png) `#457B9D`
 - ![#1D3557](https://placehold.co/15x15/1D3557/1D3557.png) `#1D3557`
-ad
