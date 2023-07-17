@@ -1,0 +1,9 @@
+# IDE files
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# Build artifacts
+.DS_Store

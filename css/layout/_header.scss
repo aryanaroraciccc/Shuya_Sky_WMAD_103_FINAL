@@ -1,0 +1,13 @@
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 10px;
+  background-color: map-get($color, wedgewood);
+
+  @include breakpoint(pc) {
+    height: 80px;
+  }
+}
