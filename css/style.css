@@ -8,6 +8,7 @@
     - The "symbol *" part is to solve Firefox SVG sprite bug
     - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
  */
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Italianno&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rakkas&display=swap");
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -116,7 +117,7 @@ body {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Gideon Roman, cursive";
   font-size: 16px;
   line-height: 1.5;
   display: flex;
