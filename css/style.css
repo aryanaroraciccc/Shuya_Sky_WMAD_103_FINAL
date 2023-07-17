@@ -229,7 +229,18 @@ p {
 
 .l-footer {
   background-color: #1d3557;
-  margin-top: auto;
-  padding: 10px;
-  height: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.l-footer {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+}
+.l-footer h3 {
+  font-family: "Poppins, sans-serif";
+  color: #f1faee;
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
 }/*# sourceMappingURL=style.css.map */
