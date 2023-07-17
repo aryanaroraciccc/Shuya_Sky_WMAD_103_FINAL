@@ -1,5 +1,11 @@
 # (TBD) Restaurant Website
 
+
+# Member
+
+- Sky
+- Shuya
+
 # Color Palette
 
 - ![#4E0014](https://placehold.co/15x15/4E0014/4E0014.png) `#4E0014`
