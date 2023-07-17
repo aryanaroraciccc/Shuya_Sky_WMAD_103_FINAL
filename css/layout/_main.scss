@@ -1,0 +1,8 @@
+.l-main {
+  flex: 1;
+  margin-top: 50px;
+
+  @include breakpoint(pc) {
+    margin-top: 80px;
+  }
+}
