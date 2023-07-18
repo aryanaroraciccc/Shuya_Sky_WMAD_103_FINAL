@@ -1,17 +1,31 @@
+
+@include breakpoint(pc) {
+
 .l-footer{
   background-color: map-get($color, cello);
   left: 0;
   bottom: 0;
   width: 100%;
   display: grid;
-  grid-template-rows: 4fr 1fr 3fr;
+
+  grid-template-rows: 4fr 0.25fr 2fr;
   align-items: center;
   color: map-get($color , peppermint);
 
     &__top{
       display: grid;
-      grid-template-columns: 4fr 4fr 4fr;
+        grid-template-columns: 4fr 4fr 4fr;
       justify-items: center;
+
+      img{
+        padding: 0.5rem 0.5rem 0.5rem 0;
+      }
+      td,li{
+        font-family: map-get($font-family, poppins);
+        font-weight: 100; 
+        opacity: 0.7; 
+        padding: 0.5rem 0.5rem 0.5rem 0;
+      }
     }
 
     hr{
@@ -30,7 +44,9 @@
       margin-top: 1.25rem;
     }
 
+
     &__bottom{
+      
       display: grid;
       grid-template-columns: 3.5fr 5fr 3.5fr;
       grid-template-rows: 1fr 0.5fr;
@@ -45,6 +61,12 @@
           grid-column: 2/3;
           display: grid;
           grid-row: 2/-1;
+          font-family: map-get($font-family, poppins);
+          font-weight: lighter;
+          letter-spacing: 0.25rem;
+          font-size: 0.75rem;
+          margin-bottom: 1rem;
+
 
         }
         &--follow-us{
@@ -57,7 +79,7 @@
           }
           .follow-us__svg--icons{
             // display: grid;
-            grid-area: 2/3/-1/-1 ;
+            padding-top: 5px;
             img{
               fill: map-get($color, amaranth);
               height: 2rem;
@@ -68,4 +90,5 @@
           }
       }
     }
+}
 }
