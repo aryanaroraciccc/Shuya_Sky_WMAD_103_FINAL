@@ -232,12 +232,10 @@ p {
   left: 0;
   bottom: 0;
   width: 100%;
-}
-
-.l-footer {
   display: grid;
   grid-template-rows: 4fr 1fr 3fr;
   align-items: center;
+  color: #f1faee;
 }
 .l-footer__top {
   display: grid;
@@ -251,10 +249,12 @@ p {
   border-top: 1px solid;
 }
 .l-footer h3 {
-  font-family: "Poppins, sans-serif";
+  font-family: "Poppins";
   color: #f1faee;
   font-size: 1.25rem;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
 }
 .l-footer__bottom {
   display: grid;
