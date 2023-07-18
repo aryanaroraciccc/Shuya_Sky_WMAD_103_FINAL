@@ -4,11 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="js/index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <!-- header section -->
-    <header class="l-header">Header</header>
+    <header class="l-header">
+      <a class="l-header__logo-link" href="">
+        <img src="/img/logo-512x512.png" alt="logo" />
+      </a>
+      <nav class="l-header__nav">
+        <a class="l-header__menu-button" id="js-menu-button">
+          <i class="material-icons l-header__hamburger-icon">menu</i>
+        </a>
+
+        <ul class="l-header__list" id="js-menu-list">
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/">HOME</a>
+          </li>
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/about.html">ABOUT</a>
+          </li>
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/access.html">ACCESS</a>
+          </li>
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/menu.html">MENU</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- main section -->
     <main class="l-main">
       <p>
