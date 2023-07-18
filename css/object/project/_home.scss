@@ -2,7 +2,6 @@
 //          hero
 //==========================
 .slideshow-container {
-    // max-width: 1000px;
     position: relative;
     margin: auto;
   }
@@ -77,16 +76,10 @@
     top: 80%;
     left: 51%;
     transform: translate(-50%, -50%);
-
-   
   }
- 
   
   /* The dots/bullets/indicators */
   .dot {
-    // position: absolute;
-    // top: 90%;
-    // left: 50%;
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -121,7 +114,5 @@
     }
     .menu-btn{
         top: 75%;
-
-        
     }
   }
