@@ -108,6 +108,11 @@ meter {
   all: revert;
 }
 
+:root {
+  --z-about-our-story: 1;
+  --z-header: 2;
+}
+
 html,
 body {
   height: 100%;
@@ -145,6 +150,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: var(--z-header);
 }
 @media screen and (min-width: 769px) {
   .l-header {
