@@ -13,10 +13,7 @@
       justify-items: center;
       .l-footer__card{
         margin: 2rem auto;
-
-        &--contact_us{
-          // margin-left: 10.7rem;
-        }
+        
       }
       td,li{
         font-family: map-get($font-family, poppins);
@@ -35,6 +32,10 @@
       letter-spacing: 0.3rem;
       font-weight: 500;
       margin-top: 1.25rem;
+    }
+    #footer-map_img{
+      width: 200px;
+      height: 120px;
     }
 
     hr{

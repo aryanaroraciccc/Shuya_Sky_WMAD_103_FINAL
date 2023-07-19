@@ -268,6 +268,10 @@ p {
   font-weight: 500;
   margin-top: 1.25rem;
 }
+.l-footer #footer-map_img {
+  width: 200px;
+  height: 120px;
+}
 .l-footer hr {
   color: #f1faee;
   opacity: 40%;
@@ -997,6 +1001,8 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
   font-family: "Gideon Roman";
   font-weight: 300;
   letter-spacing: 0.5rem;
@@ -1004,8 +1010,10 @@ p {
 }
 @media screen and (min-width: 769px) {
   .l-main__about-hero-wrapper-header {
-    font-size: 6rem;
+    font-size: 4rem;
     letter-spacing: 1rem;
+    text-align: center;
+    width: 100%;
   }
 }
 .l-main__about-hero-wrapper-subtext {
