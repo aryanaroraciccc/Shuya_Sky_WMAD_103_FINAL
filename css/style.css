@@ -826,6 +826,46 @@ p {
     margin-top: 0.5rem;
   }
 }
+.reservation {
+  display: grid;
+}
+.reservation__section {
+  margin: 2rem;
+  display: grid;
+  position: relative;
+}
+.reservation__section--card {
+  justify-items: center;
+  height: 420px;
+  width: 320px;
+  border: 1px solid #000;
+}
+.reservation__section--card h2 {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.125rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+}
+.reservation__section--card hr {
+  width: 80%;
+  height: 1px;
+  border-width: 0;
+  color: rgba(162, 162, 162, 0.5);
+  background-color: rgba(162, 162, 162, 0.5);
+}
+.reservation__section--card form {
+  display: grid;
+  height: 300px;
+}
+.reservation__section--card form #group-size select {
+  grid-area: 1/1/2/3;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+}
 .pictures {
   display: grid;
   grid-template-columns: 50vw 50vw;

@@ -51,15 +51,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
-function getCurrentDate() {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, '0');
-  const day = String(now.getDate()).padStart(2, '0');
-  return `${month} ${day}, ${year}`;
-}
-
-// Set the date input's placeholder to today's date
-const dateInput = document.getElementById('dateInput');
-dateInput.setAttribute('placeholder', getCurrentDate());

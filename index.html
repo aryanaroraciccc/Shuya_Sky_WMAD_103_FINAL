@@ -164,25 +164,25 @@
 
     <div class="reservation">
       <div class="reservation__section">
+        <img src="/img/svg/date.svg" alt="date svg">
         <div class="reservation__section--card">
           <h2>Make a reservation</h2>
           <hr>
           <form action="/" method="get">
-            <fieldset>
-              <label>Group Size
-                <select id="dropdown">
-                  <option>1 person</option>
-                  <option>2 people</option>
-                  <option>3 people</option>
-                  <option>4 people</option>
-                  <option>4+ people</option>
-                  <option>6+ people</option>
-                  <option>8+ people</option>
-                  <option>10+ people</option>
-                  <option>15+ people</option>
-                  <option>20+ people</option>
-                </select>
-              </label>
+            <fieldset id="group-size">
+              <label for="dropdown">Group Size</label>
+              <select id="dropdown">
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5">4+ people</option>
+                <option value="6">6+ people</option>
+                <option value="8">8+ people</option>
+                <option value="10">10+ people</option>
+                <option value="15">15+ people</option>
+                <option value="20">20+ people</option>
+              </select>
             </fieldset>
             <fieldset>
                 <label for="dateInput">Date</label>
@@ -194,7 +194,8 @@
         </div>
       </div>
       <div class="reservation__map">
-
+        <img src="/img/svg/pin.svg" alt="map pin svg">
+        <img src="https://placehold.co/720x420/png" alt="map placeholder">
       </div>
     </div>
 
