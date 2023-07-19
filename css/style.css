@@ -108,6 +108,11 @@ meter {
   all: revert;
 }
 
+:root {
+  --z-about-our-story: 1;
+  --z-header: 2;
+}
+
 html,
 body {
   height: 100%;
@@ -145,6 +150,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: var(--z-header);
 }
 @media screen and (min-width: 769px) {
   .l-header {
@@ -944,4 +950,293 @@ p {
   .pictures .gr-pic9 {
     grid-area: 2/5/-1/6;
   }
+}
+.l-main__about-hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.l-main__about-hero-wrapper-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-family: "Gideon Roman";
+  color: white;
+}
+.l-main__about-hero-wrapper-background {
+  width: 100%;
+}
+.l-main__about-our-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 769px) {
+  .l-main__about-our-story {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+  }
+}
+.l-main__about-our-story-image-container {
+  position: relative;
+  width: 100%;
+}
+.l-main__about-our-story-image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 100%;
+}
+.l-main__about-our-story-image-container-texts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-family: "Gideon Roman";
+  color: white;
+  z-index: var(--z-about-our-story);
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.l-main__about-our-story-image-container-texts p {
+  text-align: center;
+}
+.l-main__about-our-story-image-container-texts h2 {
+  font-size: 2rem;
+}
+.l-main__about-our-story-image-container-texts span {
+  font-family: "Italianno";
+  font-size: 1.25rem;
+}
+.l-main__about-our-story-image-container #story-bg {
+  filter: brightness(0.5);
+}
+.l-main__about-our-story-image-container #story-side {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .l-main__about-our-story-image-container #story-side {
+    display: unset;
+  }
+}
+.l-main__about-chefs h1 {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 2rem;
+  font-family: "Gideon Roman";
+}
+@media screen and (min-width: 769px) {
+  .l-main__about-chefs h1 {
+    font-size: 4rem;
+  }
+}
+.l-main__about-chefs-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding-bottom: 65px;
+}
+.l-main__about-chefs-wrapper h1 {
+  text-align: center;
+}
+@media screen and (min-width: 769px) {
+  .l-main__about-chefs-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.l-main__about-chefs-wrapper-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.l-main__about-chefs-wrapper-card-chef-image {
+  width: 10rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.l-main__about-chefs-wrapper-card-chef-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: "Poppins";
+}
+.l-main__about-chefs-wrapper-card-chef-title {
+  letter-spacing: 0.3rem;
+  font-weight: lighter;
+  font-size: 1.25rem;
+  font-family: "Poppins";
+}
+.l-main__about-chefs-wrapper-card-chef-description {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.25rem;
+  font-family: "Poppins";
+}
+.l-main__about-chefs-wrapper-card-social img {
+  width: 30px;
+  height: 30px;
+}
+.l-main__about-special {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/img/about/chief-special.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+@media screen and (min-width: 769px) {
+  .l-main__about-special {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.l-main__about-special img {
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .l-main__about-special img {
+    width: 50%;
+    height: 100%;
+  }
+}
+.l-main__about-special-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 2rem 2rem 0 2rem;
+}
+@media screen and (min-width: 769px) {
+  .l-main__about-special-texts {
+    padding: 0 4rem;
+  }
+}
+.l-main__about-special-texts h2 {
+  text-align: center;
+  text-shadow: 0px 5px 5px gray;
+  font-size: 2rem;
+}
+.l-main__about-special-texts p {
+  text-align: center;
+  color: #4e0014;
+  font-family: "Poppins";
+}
+.l-main__about-special-texts span {
+  text-align: center;
+  text-shadow: 0px 5px 5px gray;
+  font-size: 2rem;
+  font-family: "Italianno";
+}
+
+.l-main__access {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 30px;
+}
+.l-main__access-notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.l-main__access-notice h1 {
+  padding: 20px 0;
+  font-family: "Poppins";
+  text-shadow: 0px 3px 5px gray;
+  font-weight: 200;
+}
+.l-main__access-notice h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.l-main__access-notice p {
+  text-align: center;
+}
+.l-main__access-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+@media screen and (min-width: 769px) {
+  .l-main__access-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+.l-main__access-main-wrapper--table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.l-main__access-main-wrapper--table td {
+  padding: 8px;
+}
+.l-main__access-main-wrapper--table address {
+  display: flex;
+  align-items: center;
+}
+.l-main__access-main-wrapper--table td img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.l-main__access h1 {
+  padding: 20px 0;
+  font-family: "Poppins";
+  text-shadow: 0px 3px 5px gray;
+  font-weight: 200;
+}
+
+.l-main__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+  background-image: linear-gradient(#457b9d, #1d3557, #4e0014);
+}
+@media screen and (min-width: 769px) {
+  .l-main__menu {
+    gap: 5rem;
+    text-align: center;
+    padding: 5rem;
+  }
+}
+.l-main__menu-food, .l-main__menu-wine {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.l-main__menu-food iframe[src$=".pdf"], .l-main__menu-wine iframe[src$=".pdf"] {
+  width: 100%;
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */

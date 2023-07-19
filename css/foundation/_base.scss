@@ -1,3 +1,14 @@
+:root {
+  @include z-map(
+    (
+      // ↑ index low
+      --z-about-our-story: auto,
+      --z-header: auto,
+      // ↓ index high
+    )
+  );
+}
+
 html,
 body {
   height: 100%;

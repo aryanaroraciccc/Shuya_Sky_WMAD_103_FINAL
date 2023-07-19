@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="js/index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="l-header">
+      <a class="l-header__logo-link" href="">
+        <img src="/img/logo-512x512.png" alt="logo" />
+      </a>
+      <nav class="l-header__nav">
+        <a class="l-header__menu-button" id="js-menu-button">
+          <i class="material-icons l-header__hamburger-icon">menu</i>
+        </a>
+
+        <ul class="l-header__list" id="js-menu-list">
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/">HOME</a>
+          </li>
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/about.html">ABOUT</a>
+          </li>
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/access.html">ACCESS</a>
+          </li>
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/menu.html">MENU</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main class="l-main">
+      <div class="l-main__access">
+        <!-- prior notice section -->
+        <section class="l-main__access-notice">
+          <h1>What to know before you go?</h1>
+          <img src="/img/access/scroll.jpg" alt="" width="50" height="auto" />
+          <h2>Important dining information</h2>
+          <p>
+            We have a 15 minute grace period. Please call us if you are running later than 15
+            minutes after your reservation time. <br />
+            We may contact you about this reservation, so please ensure your email and phone number
+            are up to date. <br />
+            Your table will be reserved for 1 hour 45 minutes for parties of up to 4; and 2 hours
+            for parties of 5+. <br />
+            Thank you..
+          </p>
+        </section>
+        <!-- access main section -->
+        <section class="l-main__access-main">
+          <h1>Access</h1>
+          <div class="l-main__access-main-wrapper">
+            <img src="/img/access/map.png" alt="map" />
+            <table class="l-main__access-main-wrapper--table">
+              <tbody>
+                <tr>
+                  <td>Phone:</td>
+                  <td><a href="tel:+1234567890" itemprop="telephone">+1 (234) 567-890</a></td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td><a href="mailto:info@example.com" itemprop="email">info@example.com</a></td>
+                </tr>
+                <tr>
+                  <td>Address:</td>
+                  <td>
+                    <address itemprop="address" itemscope>
+                      <a itemprop="streetAddress">123 Main Street, Vancouver, CA</a>
+                    </address>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Follow:</td>
+                  <td>
+                    <img src="/img/svg/instagram.svg" alt="" width="20" height="auto" />
+                    <img src="/img/svg/twitter.svg" alt="" width="20" height="auto" />
+                    <img src="/img/svg/linkedin.svg" alt="" width="20" height="auto" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- footer section -->
+    <footer class="l-footer">
+      <div class="l-footer__top">
+        <div class="l-footer__card l-footer__card--useful_links">
+          <h3>USEFUL LINKS</h3>
+          <ul>
+            <li><a href="/access.html">Reservation</a></li>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/about.html">Meet with the team</a></li>
+          </ul>
+        </div>
+        <div class="l-footer__card l-footer__card--contact_us">
+          <h3>CONTACT US</h3>
+          <table class="GeneratedTable">
+            <tbody>
+              <tr>
+                <td>Phone:</td>
+                <td><a href="tel:+1234567890" itemprop="telephone">+1 (234) 567-890</a></td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td><a href="mailto:info@example.com" itemprop="email">info@example.com</a></td>
+              </tr>
+              <tr>
+                <td>Address:</td>
+                <td>
+                  <address itemprop="address" itemscope>
+                    <a itemprop="streetAddress">123 Main Street, Vancouver, CA</a>
+                  </address>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="l-footer__card l-footer__card--find_us">
+          <h3>FIND US</h3>
+          <img src="https://placehold.co/210x90/png" alt="placeholder" srcset="" />
+        </div>
+      </div>
+      <hr />
+      <div class="l-footer__bottom">
+        <img class="footer__logo" src="/img/tris2.png" alt="tris logo with name on it" />
+        <p>&copy; 2023 Goktug & Shuya, All Rights Reserved</p>
+        <div class="l-footer__bottom--follow-us">
+          <h3>FOLLOW US</h3>
+          <div class="follow-us__svg--icons">
+            <img src="/img/svg/instagram.svg" alt="instagram icon" />
+            <img src="/img/svg/twitter.svg" alt="twitter icon" />
+            <img class="footer__linkedin" src="/img/svg/linkedin.svg" alt="linkedin icon" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
