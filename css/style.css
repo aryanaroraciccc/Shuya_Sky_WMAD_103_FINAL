@@ -364,7 +364,8 @@ p {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -388,7 +389,8 @@ p {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #e63946;
 }
 
@@ -442,7 +444,8 @@ p {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #e63946;
 }
 
@@ -833,45 +836,77 @@ p {
   }
 }
 .reservation {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px;
+}
+@media screen and (min-width: 769px) {
+  .reservation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .reservation__section {
-  margin: 2rem;
-  display: grid;
-  position: relative;
+  padding: 30px;
+  width: 360px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.reservation__section--card {
-  justify-items: center;
-  height: 420px;
-  width: 320px;
-  border: 1px solid #000;
-}
-.reservation__section--card h2 {
-  font-family: "Poppins";
-  font-size: 1.25rem;
-  font-weight: 500;
+.reservation__section-card h2 {
   text-align: center;
-  letter-spacing: 0.125rem;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 10px 0;
+  text-shadow: 0px 3px 5px gray;
+  border-bottom: #bbb solid 1px;
+  width: auto;
 }
-.reservation__section--card hr {
-  width: 80%;
-  height: 1px;
-  border-width: 0;
-  color: rgba(162, 162, 162, 0.5);
-  background-color: rgba(162, 162, 162, 0.5);
+.reservation__section-form-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  padding: 30px 0;
 }
-.reservation__section--card form {
-  display: grid;
-  height: 300px;
+.reservation__section-form-field-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
 }
-.reservation__section--card form #group-size select {
-  grid-area: 1/1/2/3;
+.reservation__section-form-field-item-input {
+  width: 300px;
+  border-bottom: #bbb solid 1px;
+}
+.reservation__section-form-submit {
   width: 100%;
-  border: none;
-  border-bottom: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4e0014;
 }
+.reservation__map {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reservation__map .reservation-map-img {
+  width: 50vw;
+  min-width: 400px;
+}
+
 .pictures {
   display: grid;
   grid-template-columns: 50vw 50vw;
