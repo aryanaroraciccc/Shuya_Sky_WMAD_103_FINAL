@@ -825,4 +825,136 @@ p {
   .season__card-5--wine_section img {
     margin-top: 0.5rem;
   }
+}
+/* Styling for the reservation form */
+.reservation-form {
+  border: 1px solid black;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  height: 600px;
+  width: 100%;
+}
+
+/* Styling for the separator (horizontal rule) */
+.separator {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 80%;
+}
+
+/* Styling for the group size input section */
+.group-size {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.group-size label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Styling for the date and time inputs */
+.date-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.date-time input {
+  width: 48%; /* Adjust this value as needed to fit both inputs side by side */
+}
+
+/* Styling for the submit button */
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.pictures {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: repeat(6, 300px);
+  overflow: hidden;
+}
+.pictures .gr-pic img {
+  min-width: 100%;
+  min-height: 100%;
+}
+.pictures .gr-pic1 {
+  grid-area: 1/1/2/2;
+}
+.pictures .gr-pic2 {
+  grid-area: 1/2/2/3;
+}
+.pictures .gr-pic3 {
+  grid-area: 2/1/3/-1;
+  width: 100vw;
+}
+.pictures .gr-pic4 {
+  grid-area: 3/1/4/2;
+}
+.pictures .gr-pic5 {
+  grid-area: 3/2/4/-1;
+}
+.pictures .gr-pic6 {
+  grid-area: 4/1/5/2;
+}
+.pictures .gr-pic7 {
+  grid-area: 4/2/5/-1;
+}
+.pictures .gr-pic8 {
+  grid-area: 5/1/6/2;
+}
+.pictures .gr-pic9 {
+  grid-area: 5/2/6/-1;
+}
+
+@media screen and (min-width: 769px) {
+  .pictures {
+    grid-template-rows: 175px 50px 300px;
+    grid-template-columns: 1fr 2fr 1.3fr 1fr 0.6fr;
+  }
+  .pictures .gr-pic img {
+    height: auto;
+    width: auto;
+    display: inline;
+    border: 2px solid #a8dadc;
+  }
+  .pictures .gr-pic1 {
+    grid-area: 1/1/2/2;
+  }
+  .pictures .gr-pic2 {
+    grid-area: 2/1/-1/2;
+  }
+  .pictures .gr-pic3 {
+    grid-area: 1/2/3/3;
+    width: auto;
+  }
+  .pictures .gr-pic4 {
+    grid-area: 3/2/4/3;
+  }
+  .pictures .gr-pic5 {
+    grid-area: 1/3/-1/4;
+  }
+  .pictures .gr-pic6 {
+    grid-area: 1/4/3/5;
+  }
+  .pictures .gr-pic7 {
+    grid-area: 3/4/-1/5;
+  }
+  .pictures .gr-pic8 {
+    grid-area: 1/5/2/6;
+  }
+  .pictures .gr-pic9 {
+    grid-area: 2/5/-1/6;
+  }
 }/*# sourceMappingURL=style.css.map */
