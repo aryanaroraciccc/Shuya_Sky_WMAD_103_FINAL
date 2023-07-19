@@ -826,59 +826,6 @@ p {
     margin-top: 0.5rem;
   }
 }
-/* Styling for the reservation form */
-.reservation-form {
-  border: 1px solid black;
-  padding: 20px;
-  width: 80%;
-  margin: 0 auto;
-  height: 600px;
-  width: 100%;
-}
-
-/* Styling for the separator (horizontal rule) */
-.separator {
-  border: none;
-  border-bottom: 1px solid black;
-  width: 80%;
-}
-
-/* Styling for the group size input section */
-.group-size {
-  border: none;
-  border-bottom: 1px solid black;
-  margin-bottom: 10px;
-}
-
-.group-size label {
-  display: block;
-  font-weight: bold;
-}
-
-/* Styling for the date and time inputs */
-.date-time {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.date-time input {
-  width: 48%; /* Adjust this value as needed to fit both inputs side by side */
-}
-
-/* Styling for the submit button */
-button[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-button[type=submit]:hover {
-  background-color: #45a049;
-}
-
 .pictures {
   display: grid;
   grid-template-columns: 50vw 50vw;
