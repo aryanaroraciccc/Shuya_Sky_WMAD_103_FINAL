@@ -1058,8 +1058,8 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2rem;
-  font-family: "Gideon Roman";
+  font-size: 3rem;
+  font-family: "Poppins";
   color: white;
   z-index: var(--z-about-our-story);
   width: 100%;
@@ -1069,19 +1069,25 @@ p {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  text-shadow: 0px 7px 7px rgba(255, 255, 255, 0.4);
 }
 .l-main__about-our-story-image-container-texts p {
   text-align: center;
+  font-size: 1.25rem;
+  margin: 0.5rem 4rem;
+  font-weight: 300;
 }
 .l-main__about-our-story-image-container-texts h2 {
-  font-size: 2rem;
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-family: "Gideon Roman";
 }
 .l-main__about-our-story-image-container-texts span {
   font-family: "Italianno";
-  font-size: 1.25rem;
+  font-size: 2 0.25rem;
 }
 .l-main__about-our-story-image-container #story-bg {
-  filter: brightness(0.5);
+  filter: brightness(0.3);
 }
 .l-main__about-our-story-image-container #story-side {
   display: none;
@@ -1094,8 +1100,12 @@ p {
 .l-main__about-chefs h1 {
   text-align: center;
   padding: 40px 0;
-  font-size: 2rem;
   font-family: "Gideon Roman";
+  font-size: 2.75rem;
+  letter-spacing: 0.25rem;
+  color: #4e0014;
+  font-weight: 300;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 769px) {
   .l-main__about-chefs h1 {
@@ -1132,16 +1142,21 @@ p {
 .l-main__about-chefs-wrapper-card-chef-image {
   width: 10rem;
   border-radius: 999px;
+  border: 2px solid;
+  border-color: #4e0014;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .l-main__about-chefs-wrapper-card-chef-name {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.25rem;
   font-family: "Poppins";
+  letter-spacing: 0.25rem;
+  color: #000000;
+  opacity: 70%;
 }
 .l-main__about-chefs-wrapper-card-chef-title {
   letter-spacing: 0.3rem;
-  font-weight: lighter;
+  font-weight: 200;
   font-size: 1.25rem;
   font-family: "Poppins";
 }
@@ -1173,6 +1188,7 @@ p {
 }
 .l-main__about-special img {
   width: 100%;
+  box-shadow: -6px 7px 6px 7px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 769px) {
   .l-main__about-special img {
@@ -1197,11 +1213,14 @@ p {
   text-align: center;
   text-shadow: 0px 5px 5px gray;
   font-size: 2rem;
+  font-family: "Rakkas";
 }
 .l-main__about-special-texts p {
   text-align: center;
   color: #4e0014;
   font-family: "Poppins";
+  font-weight: 300;
+  text-shadow: 0px 5px 5px gray;
 }
 .l-main__about-special-texts span {
   text-align: center;

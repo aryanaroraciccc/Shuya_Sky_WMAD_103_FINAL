@@ -97,8 +97,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 2rem;
-        font-family: map-get($font-family, gideon);
+        font-size: 3rem;
+        font-family: map-get($font-family, poppins);
         color: white;
         z-index: var(--z-about-our-story);
         width: 100%;
@@ -108,19 +108,26 @@
         align-items: center;
         justify-content: space-between;
         height: 100%;
+        text-shadow: 0px 7px 7px rgba(255, 255, 255, 0.4);
+
         p {
           text-align: center;
+          font-size: 1.25rem;
+          margin: 0.5rem 4rem;
+          font-weight: 300;
         }
         h2 {
-          font-size: 2rem;
+          margin-top: 1rem;
+          font-size: 3rem;
+          font-family: map-get($font-family, gideon);
         }
         span {
           font-family: map-get($font-family, italianno);
-          font-size: 1.25rem;
+          font-size: 2  .25rem;
         }
       }
       #story-bg {
-        filter: brightness(0.5);
+        filter: brightness(0.3);
       }
       #story-side {
         display: none;
@@ -135,8 +142,12 @@
     h1 {
       text-align: center;
       padding: 40px 0;
-      font-size: 2rem;
       font-family: map-get($font-family, gideon);
+      font-size: 2.75rem;
+      letter-spacing: 0.25rem;
+      color: map-get($color, castro );
+      font-weight: 300;
+      text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
       @include breakpoint(pc) {
         font-size: 4rem;
       }
@@ -167,16 +178,21 @@
         &-chef-image {
           width: 10rem;
           border-radius: 999px;
+          border: 2px solid;
+          border-color: map-get($color, castro );
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
         }
         &-chef-name {
-          font-weight: bold;
+          font-weight: 500;
           font-size: 1.25rem;
           font-family: map-get($font-family, poppins);
+          letter-spacing: 0.25rem;
+          color: #000000;
+          opacity: 70%;
         }
         &-chef-title {
           letter-spacing: 0.3rem;
-          font-weight: lighter;
+          font-weight: 200;
           font-size: 1.25rem;
           font-family: map-get($font-family, poppins);
         }
@@ -212,6 +228,7 @@
     }
     img {
       width: 100%;
+      box-shadow: -6px 7px 6px 7px rgba(0,0,0,0.25);
       @include breakpoint(pc) {
         width: 50%;
         height: 100%;
@@ -231,12 +248,15 @@
         text-align: center;
         text-shadow: 0px 5px 5px gray;
         font-size: 2rem;
-        font-family: map-get($font-family, rakaks);
+        font-family: map-get($font-family, rakkas);
       }
       p {
         text-align: center;
         color: map-get($color, castro);
         font-family: map-get($font-family, poppins);
+        font-weight: 300;
+        text-shadow: 0px 5px 5px gray;
+
       }
       span {
         text-align: center;
