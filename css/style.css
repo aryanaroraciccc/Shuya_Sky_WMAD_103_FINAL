@@ -147,6 +147,9 @@ p {
   height: 50px;
   padding: 10px 20px;
   background-color: #457b9d;
+  font-family: "Poppins";
+  font-weight: 500;
+  letter-spacing: 0.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
