@@ -9,8 +9,22 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="loader-wrapper">
+      <!-- <span class="loader"><span class="loader-inner"></span></span> -->
+      <div class="container">
+        <div class="frame-1 frame">
+            <img id="fr-1" src="/img/loading/tris-f1.png" alt="">
+        </div>
+        <div class="frame-2 frame">
+            <img id="fr-2" src="/img/loading/tris-f2.png" alt="">
+        </div>
+        <div class="frame frame-3">
+            <img id="fr-3" src="/img/loading/tris-f3.png" alt="">
+        </div>
+    </div>
+    </div>
     <!-- header section -->
-    <header class="l-header">
+    <header class="l-header"  style="display: none;">
       <a class="l-header__logo-link" href="">
         <img src="/img/logo-512x512.png" alt="logo" />
       </a>
@@ -36,7 +50,7 @@
       </nav>
     </header>
     <!-- main section -->
-    <main class="l-main">
+    <main class="l-main" style="display: none;">
       <!-- Slideshow container -->
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
@@ -295,8 +309,9 @@
         </div>
       </div>
     </main>
+  
     <!-- footer section -->
-    <footer class="l-footer">
+    <footer class="l-footer" style="display: none;">
       <div class="l-footer__top">
         <div class="l-footer__card l-footer__card--useful_links">
           <h3>USEFUL LINKS</h3>

@@ -1125,6 +1125,61 @@ p {
     opacity: 1;
   }
 }
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #a8dadc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+.frame {
+  position: absolute;
+}
+
+.frame img {
+  height: 8rem;
+}
+
+.frame-1 {
+  z-index: 2;
+}
+
+.frame-2 {
+  z-index: 1;
+}
+
+.frame-3 {
+  z-index: 3;
+}
+
+@keyframes capeAnim {
+  50% {
+    transform: skew(-5deg, -15deg);
+  }
+}
+@keyframes trident {
+  25% {
+    transform: skew(2deg, 2deg) translate(9px, 0px) rotate(-8deg);
+  }
+  75% {
+    transform: skew(2deg, 2deg) translate(3px, -5px) rotateY(-32deg) rotateX(5deg);
+  }
+}
+.frame-2 img {
+  animation: capeAnim 2s ease-in;
+}
+
+.frame-3 img {
+  animation: trident 2s ease-in;
+}
+
 .l-main__about-hero-wrapper {
   position: relative;
   width: 100%;

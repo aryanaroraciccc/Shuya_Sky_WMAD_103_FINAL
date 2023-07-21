@@ -127,3 +127,26 @@ seasonCardsWine.forEach((card) => {
   card.addEventListener("mouseenter", showWinePrice);
   card.addEventListener("mouseleave", hideWinePrice);
 });
+
+
+function showContent() {
+  const loaderWrapper = document.querySelector('.loader-wrapper');
+  const contentWrapperMain = document.querySelector('.l-main');
+  const contentWrapperHeader = document.querySelector('.l-header');
+  const contentWrapperFooter = document.querySelector('.l-footer');
+
+  // Hide the loader wrapper using opacity transition
+  loaderWrapper.style.opacity = 0;
+
+  // After the opacity transition completes, show the content
+  loaderWrapper.addEventListener('transitionend', function handleTransitionEnd() {
+    loaderWrapper.removeEventListener('transitionend', handleTransitionEnd);
+    loaderWrapper.style.display = 'none';
+    contentWrapperMain.style.display = 'block';
+    contentWrapperHeader.style.display = 'flex';
+    contentWrapperFooter.style.display = 'grid';
+  });
+}
+
+// Attach the showContent function to the window's load event
+window.addEventListener('load', showContent);
