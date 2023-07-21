@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="js/index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="l-header">
+      <a class="l-header__logo-link" href="">
+        <img src="/img/logo-512x512.png" alt="logo" />
+      </a>
+      <nav class="l-header__nav">
+        <a class="l-header__menu-button" id="js-menu-button">
+          <i class="material-icons l-header__hamburger-icon">menu</i>
+        </a>
+
+        <ul class="l-header__list" id="js-menu-list">
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/">HOME</a>
+          </li>
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/about.html">ABOUT</a>
+          </li>
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/access.html">ACCESS</a>
+          </li>
+          <li class="l-header__list-item">
+            <a class="l-header__list-item-link" href="/menu.html">MENU</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main class="l-main">
+      <!-- hero section -->
+      <section class="l-main__about-hero">
+        <div class="l-main__about-hero-wrapper">
+          <h1 class="l-main__about-hero-wrapper-header">ABOUT US</h1>
+          <p class="l-main__about-hero-wrapper-subtext">Our Story</p>
+          <div class="l-main__about-hero-wrapper-image_container">
+            <img id="wrapper-chef_icon" src="/img/svg/chef.svg" alt="chef svg">
+            <img id="wrapper-waiter_icon" src="/img/svg/waiter.png" alt="waiter svg">
+            <img id="wrapper-cook_icon" src="/img/svg/cook.svg" alt="cook svg">
+          </div>
+          <video autoplay muted loop class="l-main__about-hero-wrapper-background">
+            <source src="/img/about/about-video.mov" type="video/mp4" />
+            <!-- Add additional <source> elements for different video formats -->
+          </video>
+        </div>
+      </section>
+      <!--  who we are section -->
+      <div class="about">
+        <h1>WHO WE ARE</h1>
+        <p id="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia fringilla imperdiet. 
+          Nullam vitae aliquam erat, at posuere erat. Nulla purus enim, iaculis sit amet magna sed, 
+          vulputate dapibus tortor. Etiam eu diam mattis, pulvinar turpis ut, viverra lectus. </p>
+        <div class="about__card-1">
+            <img src="/img/main/about/about-p1.jpg" alt="card1 about us image">
+            <h2>FINEST WINES</h2>
+            <img id="wine-glass" src="/img/svg/wine-glass.svg" alt="wine glass svg about us finest wines">
+            <p>Our curated bottles embody the winemakers' artful dedication, embracing the land's essence and harnessing grape's unique character.</p>
+        </div>
+        <div class="about__card-2">
+            <img src="/img/main/about/about-p2.jpg" alt="card2 about us image">
+            <h2>MADE WITH PASSION</h2>
+            <img id="kitchen-knife" src="/img/svg/kitchen-knife.svg" alt="kitchen knife svg about us made with passion">
+            <p>Our chef's artistry extends beyond the plate – a love for the culinary journey, bringing joy to every diner's experience.</p>
+        </div>
+        <div class="about__card-3">
+            <img src="/img/main/about/about-p3.jpg" alt="card3 about us image">
+            <h2>ALWAYS FRESH</h2>
+            <img id="shrimp" src="/img/svg/shrimp.svg" alt="shrimp svg about us fienst wines">
+            <p>Passionate about serving the freshest catch, each dish transports you to the shores, embracing the sea's salty breeze and flavors.</p>
+        </div>
+      </div>
+
+      <!-- our story section -->
+      <section class="l-main__about-our-story">
+        <div class="l-main__about-our-story-image-container">
+          <div class="l-main__about-our-story-image-container-texts">
+            <h2>Our Story</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia fringilla 
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia fringilla
+            </p>
+            <span>Shuya & Sky</span>
+          </div>
+          <img id="story-bg" src="/img/about/story-bg.jpg" alt="story-bg" />
+        </div>
+        <div class="l-main__about-our-story-image-container">
+          <img id="story-side" src="/img/about/story-side.jpg" alt="story-side" />
+        </div>
+      </section>
+
+      <!-- chefs section -->
+      <section class="l-main__about-chefs">
+        <h1>CHEFS</h1>
+        <div class="l-main__about-chefs-wrapper">
+          <!-- chef1 -->
+          <div class="l-main__about-chefs-wrapper-card">
+            <img
+              class="l-main__about-chefs-wrapper-card-chef-image"
+              src="/img/about/chefs/chef1.jpeg"
+              alt="chef1"
+            />
+            <p class="l-main__about-chefs-wrapper-card-chef-name">MICHAEL SCOTT</p>
+            <p class="l-main__about-chefs-wrapper-card-chef-title">chef</p>
+            <p class="l-main__about-chefs-wrapper-card-chef-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="l-main__about-chefs-wrapper-card-social">
+              <img src="/img/svg/instagram.svg" alt="instagram icon" />
+              <img src="/img/svg/twitter.svg" alt="twitter icon" />
+            </div>
+          </div>
+          <!-- chef2 -->
+          <div class="l-main__about-chefs-wrapper-card">
+            <img
+              class="l-main__about-chefs-wrapper-card-chef-image"
+              src="/img/about/chefs/chef2.jpeg"
+              alt="chef2"
+            />
+            <p class="l-main__about-chefs-wrapper-card-chef-name">PAM BEESLY</p>
+            <p class="l-main__about-chefs-wrapper-card-chef-title">cook</p>
+            <p class="l-main__about-chefs-wrapper-card-chef-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="l-main__about-chefs-wrapper-card-social">
+              <img src="/img/svg/instagram.svg" alt="instagram icon" />
+              <img src="/img/svg/twitter.svg" alt="twitter icon" />
+            </div>
+          </div>
+          <!-- chef3 -->
+          <div class="l-main__about-chefs-wrapper-card">
+            <img
+              class="l-main__about-chefs-wrapper-card-chef-image"
+              src="/img/about/chefs/chef3.jpeg"
+              alt="chef3"
+            />
+            <p class="l-main__about-chefs-wrapper-card-chef-name">RYAN HOWARD</p>
+            <p class="l-main__about-chefs-wrapper-card-chef-title">sous chef</p>
+            <p class="l-main__about-chefs-wrapper-card-chef-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="l-main__about-chefs-wrapper-card-social">
+              <img src="/img/svg/instagram.svg" alt="instagram icon" />
+              <img src="/img/svg/twitter.svg" alt="twitter icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- chef's special -->
+      <section class="l-main__about-special">
+        <img src="/img/about/signature-dish.jpg" alt="chef's special" />
+        <div class="l-main__about-special-texts">
+          <h2>CHEF'S SPECIAL</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia fringilla
+            consectetur adipiscing elit. Maecenas lacinia fringilla
+          </p>
+          <span>Chef Michael SCOTT</span>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer class="l-footer">
+      <div class="l-footer__top">
+        <div class="l-footer__card l-footer__card--useful_links">
+          <h3>USEFUL LINKS</h3>
+          <ul>
+            <li><a href="/access.html">Reservation</a></li>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/about.html">Meet with the team</a></li>
+          </ul>
+        </div>
+        <div class="l-footer__card l-footer__card--contact_us">
+          <h3>CONTACT US</h3>
+          <table class="GeneratedTable">
+            <tbody>
+              <tr>
+                <td>Phone:</td>
+                <td><a href="tel:+1234567890" itemprop="telephone">+1 (234) 567-890</a></td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td><a href="mailto:info@example.com" itemprop="email">info@example.com</a></td>
+              </tr>
+              <tr>
+                <td>Address:</td>
+                <td>
+                  <address itemprop="address" itemscope>
+                    <a itemprop="streetAddress">123 Main Street, Vancouver, CA</a>
+                  </address>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="l-footer__card l-footer__card--find_us">
+          <h3>FIND US</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41644.13752210549!2d-123.18447899377425!3d49.2809713476495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671821c149771%3A0xd64c377f2df4b19f!2sCornerstone%20International%20Community%20College%20of%20Canada%20-%20Tech%20Campus!5e0!3m2!1str!2sca!4v1689898143089!5m2!1str!2sca" width="210" height="90" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+      </div>
+      <hr />
+      <div class="l-footer__bottom">
+        <img class="footer__logo" src="/img/tris2.png" alt="tris logo with name on it" />
+        <p>&copy; 2023 Goktug & Shuya, All Rights Reserved</p>
+        <div class="l-footer__bottom--follow-us">
+          <h3>FOLLOW US</h3>
+          <div class="follow-us__svg--icons">
+            <img src="/img/svg/instagram.svg" alt="instagram icon" />
+            <img src="/img/svg/twitter.svg" alt="twitter icon" />
+            <img class="footer__linkedin" src="/img/svg/linkedin.svg" alt="linkedin icon" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
