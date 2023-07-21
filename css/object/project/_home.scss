@@ -76,6 +76,36 @@
   top: 80%;
   left: 51%;
   transform: translate(-50%, -50%);
+  	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: map-get($color, aqua-island);
+		border-radius: 5px;
+		z-index: -2;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: darken(map-get($color, aqua-island), 15%);
+		transition: all .3s;
+		border-radius: 5px;
+		z-index: -1;
+	}
+	&:hover {
+		color: #fff;
+		&:before {
+			width: 100%;
+		}
+	}
+
 }
 
 /* The dots/bullets/indicators */
@@ -173,6 +203,8 @@
     justify-items: center;
     max-width: 500px;
     margin-bottom: 30px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+
     img:nth-of-type(1) {
       border-radius: 1rem;
       height: 300px;
@@ -543,10 +575,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     .reservation-map-img {
       width: 50vw;
       min-width: 400px;
     }
+
   }
 }
 
@@ -637,4 +671,127 @@
       }
     }
   }
+}
+
+@include breakpoint(pc){
+
+  .grayscale {
+    filter: grayscale(75%);
+  }
+  // .scale {
+  //   transform: scale(1.025);
+  // }
+}
+
+.f-price{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    color: map-get($color, aqua-island );
+    font-size: 2rem;
+    background: map-get($color, cello );
+    mix-blend-mode: hard-light;
+  animation: fadeIn-Season 0.75s;
+
+}
+
+.f-hidden,
+.w-hidden {
+  display: none;
+}
+.w-price{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: map-get($color, aqua-island  );
+  font-size: 2rem;
+  background: map-get($color, castro);
+  mix-blend-mode: hard-light;
+  animation: fadeIn-Season 0.75s;
+}
+
+@for $i from 1 through 5 {
+  .season__card-#{$i}--food_pic, .season__card-#{$i}--wine_pic {
+    &.grayscale2 {
+      filter: grayscale(75%);
+    }
+    &:hover{
+    cursor: pointer;
+      box-shadow: 0px 5px 10px 3px rgba(255, 255, 255, 0.5);
+      transform: skewX();
+      animation: bounce 0.75s ease;
+    }
+  }
+}
+
+@keyframes bounce {
+  50%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-10px);} 
+  60% {transform: translateY(-5px);} 
+}
+@keyframes fadeIn-Season {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: map-get($color, aqua-island);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+
+.frame {
+  position: absolute;
+}
+
+.frame img {
+  height: 8rem;
+}
+
+.frame-1 {
+  z-index: 2;
+}
+
+.frame-2 {
+  z-index: 1;
+}
+
+.frame-3 {
+  z-index: 3;
+}
+
+@keyframes capeAnim {
+  50%{
+      transform: skew(-5deg, -15deg) ;
+  }
+}
+
+@keyframes trident {
+ 25%{
+  transform: skew(2deg, 2deg) translate(9px, 0px) rotate(-8deg);
+ }
+ 75%{
+  transform: skew(2deg, 2deg) translate(3px,-5px) rotateY(-32deg) rotateX(5deg);
+ }
+}
+
+.frame-2 img{
+  animation: capeAnim 2s ease-in;
+}
+
+.frame-3 img{
+  animation: trident 2s ease-in;
 }

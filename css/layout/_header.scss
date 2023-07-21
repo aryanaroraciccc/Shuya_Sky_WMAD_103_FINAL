@@ -5,6 +5,9 @@
   height: 50px;
   padding: 10px 20px;
   background-color: map-get($color, wedgewood);
+  font-family: map-get($font-family, poppins );
+  font-weight: 500;
+  letter-spacing: 0.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

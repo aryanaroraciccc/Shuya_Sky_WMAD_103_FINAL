@@ -9,8 +9,22 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="loader-wrapper">
+      <!-- <span class="loader"><span class="loader-inner"></span></span> -->
+      <div class="container">
+        <div class="frame-1 frame">
+            <img id="fr-1" src="/img/loading/tris-f1.png" alt="">
+        </div>
+        <div class="frame-2 frame">
+            <img id="fr-2" src="/img/loading/tris-f2.png" alt="">
+        </div>
+        <div class="frame frame-3">
+            <img id="fr-3" src="/img/loading/tris-f3.png" alt="">
+        </div>
+    </div>
+    </div>
     <!-- header section -->
-    <header class="l-header">
+    <header class="l-header"  style="display: none;">
       <a class="l-header__logo-link" href="">
         <img src="/img/logo-512x512.png" alt="logo" />
       </a>
@@ -36,7 +50,7 @@
       </nav>
     </header>
     <!-- main section -->
-    <main class="l-main">
+    <main class="l-main" style="display: none;">
       <!-- Slideshow container -->
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
@@ -117,7 +131,10 @@
         <div class="about__card-3">
           <img src="/img/main/about/about-p3.jpg" alt="card3 about us image" />
           <h2>ALWAYS FRESH</h2>
-          <img id="shrimp" src="/img/svg/shrimp.svg" alt="shrimp svg about us fienst wines" />
+          <img 
+            id="shrimp" 
+            src="/img/svg/shrimp.svg" 
+            alt="shrimp svg about us finest wines" />
           <p>
             Passionate about serving the freshest catch, each dish transports you to the shores,
             embracing the sea's salty breeze and flavors.
@@ -128,60 +145,80 @@
         <h1>Seasonal Fish & Wine</h1>
         <div class="season__card-1">
           <div class="season__card-1--food_section">
-            <div class="season__card-1--food_pic"></div>
+            <div class="season__card-1--food_pic">
+              <p class="f-price f-hidden">$12.50</p>
+            </div>
             <p>Shrimp</p>
             <img src="/img/svg/plate.svg" alt="plate svg" />
           </div>
           <div class="season__card-1--wine_section">
-            <div class="season__card-1--wine_pic"></div>
+            <div class="season__card-1--wine_pic">
+              <p class="w-price w-hidden">$42.00</p>
+            </div>
             <p>Chianti</p>
             <img src="/img/svg/corkscrew.svg" alt="corkscrew svg" />
           </div>
         </div>
         <div class="season__card-2">
           <div class="season__card-2--food_section">
-            <div class="season__card-2--food_pic"></div>
+            <div class="season__card-2--food_pic">
+              <p class="f-price f-hidden">$10.00</p>
+            </div>
             <p>Salmon</p>
             <img src="/img/svg/plate.svg" alt="plate svg" />
           </div>
           <div class="season__card-2--wine_section">
-            <div class="season__card-2--wine_pic"></div>
+            <div class="season__card-2--wine_pic">
+              <p class="w-price w-hidden">$31.00</p>
+            </div>
             <p>Marlborough</p>
             <img src="/img/svg/corkscrew.svg" alt="corkscrew svg" />
           </div>
         </div>
         <div class="season__card-3">
           <div class="season__card-3--food_section">
-            <div class="season__card-3--food_pic"></div>
+            <div class="season__card-3--food_pic">
+              <p class="f-price f-hidden">$9.50</p>
+            </div>
             <p>Pollock</p>
             <img src="/img/svg/plate.svg" alt="plate svg" />
           </div>
           <div class="season__card-3--wine_section">
-            <div class="season__card-3--wine_pic"></div>
+            <div class="season__card-3--wine_pic">
+              <p class="w-price w-hidden">$26.00</p>
+            </div>
             <p>Moda</p>
             <img src="/img/svg/corkscrew.svg" alt="corkscrew svg" />
           </div>
         </div>
         <div class="season__card-4">
           <div class="season__card-4--food_section">
-            <div class="season__card-4--food_pic"></div>
+            <div class="season__card-4--food_pic">
+              <p class="f-price f-hidden">$8.50</p>
+            </div>
             <p>Oyster</p>
             <img src="/img/svg/plate.svg" alt="plate svg" />
           </div>
           <div class="season__card-4--wine_section">
-            <div class="season__card-4--wine_pic"></div>
+            <div class="season__card-4--wine_pic">
+              <p class="w-price w-hidden">$29.00</p>
+            </div>
             <p>Kai Simone</p>
             <img src="/img/svg/corkscrew.svg" alt="corkscrew svg" />
           </div>
         </div>
         <div class="season__card-5">
           <div class="season__card-5--food_section">
-            <div class="season__card-5--food_pic"></div>
+            <div class="season__card-5--food_pic">
+              <p class="f-price f-hidden">$13.00</p>
+            </div>
             <p>Octopus</p>
             <img src="/img/svg/plate.svg" alt="plate svg" />
           </div>
           <div class="season__card-5--wine_section">
-            <div class="season__card-5--wine_pic"></div>
+            <div class="season__card-5--wine_pic">
+              <p class="w-price w-hidden">$38.50</p>
+            </div>
             <p>Broadleaf</p>
             <img src="/img/svg/corkscrew.svg" alt="corkscrew svg" />
           </div>
@@ -203,6 +240,15 @@
             <hr />
             <form action="/" method="get">
               <div class="reservation__section-form-field">
+                <fieldset class="reservation__section-form-field-item">
+                  <label for="name">First Name</label>
+                  <input
+                    class="reservation__section-form-field-item-input"
+                    type="name"
+                    id="name"
+                    name="username"
+                  />
+                </fieldset>
                 <fieldset class="reservation__section-form-field-item" id="group-size">
                   <label for="dropdown">Group Size</label>
                   <select class="reservation__section-form-field-item-input" id="dropdown">
@@ -238,7 +284,7 @@
         <!-- reservation map -->
         <div class="reservation__map">
           <img src="/img/svg/pin.svg" alt="map pin svg" />
-          <img class="reservation-map-img" src="/img/access/map.png" alt="map" />
+          <iframe class="reservation-map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41644.13752210549!2d-123.18447899377425!3d49.2809713476495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671821c149771%3A0xd64c377f2df4b19f!2sCornerstone%20International%20Community%20College%20of%20Canada%20-%20Tech%20Campus!5e0!3m2!1str!2sca!4v1689898143089!5m2!1str!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
 
@@ -272,8 +318,9 @@
         </div>
       </div>
     </main>
+  
     <!-- footer section -->
-    <footer class="l-footer">
+    <footer class="l-footer" style="display: none;">
       <div class="l-footer__top">
         <div class="l-footer__card l-footer__card--useful_links">
           <h3>USEFUL LINKS</h3>
@@ -308,7 +355,7 @@
         </div>
         <div class="l-footer__card l-footer__card--find_us">
           <h3>FIND US</h3>
-          <img id="footer-map_img" src="/img/access/map.png" alt="placeholder"/>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41644.13752210549!2d-123.18447899377425!3d49.2809713476495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671821c149771%3A0xd64c377f2df4b19f!2sCornerstone%20International%20Community%20College%20of%20Canada%20-%20Tech%20Campus!5e0!3m2!1str!2sca!4v1689898143089!5m2!1str!2sca" width="210" height="90" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <hr />
