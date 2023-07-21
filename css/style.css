@@ -938,6 +938,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .reservation__map .reservation-map-img {
   width: 50vw;
@@ -1543,7 +1544,7 @@ p {
   display: flex;
   align-items: center;
 }
-.l-main__access-main-wrapper--table td img {
+.l-main__access-main-wrapper--table td iframe {
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px;
